@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow-x: hidden;
+    background-image: url('../images/Signin-background.jpg');
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+section{ 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+body::before{
+    content: "";
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+nav{
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+nav img{
+    width: 100px;
+}
+nav .selectmenu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+
+}
+nav .selectmenu select{
+    text-align: center;
+    margin-right: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 6px 8px 6px 35px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+nav .selectmenu select option{
+    color: black;
+    text-align: start;
+}
+nav .selectmenu .fa-globe{
+    color: white;
+    position: absolute;
+    right: 114px;
+    font-size: 15px;
+}
+nav .selectmenu a{
+    background-color: red;
+    color: white;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+section .container .box {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 90vh;
+    width: 60vw;
+    padding: 70px;
+    padding-bottom: 0;
+    margin: auto;
+    background-color: #000000b7;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section .container .box h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+section .container .box form {
+    width: 100%;
+}
+section .container .box input {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px ;
+    background-color: rgba(59, 59, 59, 0.452);
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: 0.5s ease-in-out all;
+    -webkit-transition: 0.5s ease-in-out all;
+    -moz-transition: 0.5s ease-in-out all;
+    -ms-transition: 0.5s ease-in-out all;
+    -o-transition: 0.5s ease-in-out all;
+    
+}
+section .container .box input:focus {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out all;
+    -webkit-transition: 0.5s ease-in-out all;
+    -moz-transition: 0.5s ease-in-out all;
+    -ms-transition: 0.5s ease-in-out all;
+    -o-transition: 0.5s ease-in-out all;
+}
+section .container .box .erorr {
+    color: red;
+    padding: 0;
+}
+section .container .box .submit {
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+section .container .box .help {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+section .container .box .help div {
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+section .container .box .help div span {
+    color: white;
+    font-weight: 100;
+}
+section .container .box .help div input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+section .container .box .help a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+section .container .box .facebook {
+    padding: 30px 0 10px 0;
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+}
+section .container .box .facebook img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+section .container .box .sign-up {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+}
+section .container .box .sign-up span {
+    font-weight: 100;
+}
+section .container .box .sign-up a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding-left: 10px;
+}
+section .container .box p {
+    color: white;
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    margin-left: 0;
+    line-height: 2;
+    font-weight: 100;
+    word-spacing: 5px;
+    padding-bottom: 50px;
+}
+section .container .box p a {
+    text-decoration: none;
+    font-weight: 400;
+    padding-left: 10px;
+}
+@media(max-width:950px){
+    section .container .box  .last-p {
+        display: none;
+    }
+}
+@media(max-width:620px){
+    section .container .box{
+        padding: 10px;
+        width: 100%;
+    }
+}
+@media(max-width:445px){
+    nav .selectmenu select {
+        padding: 5px 10px;
+    }
+    nav .selectmenu i {
+        display: none;
+    }
+}

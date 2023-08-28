@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/nficon2016 (1).ico"
+      type="image/x-icon"
+    />
+    <title>Netflix</title>
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/signin.css" />
+  </head>
+  <body>
+    <!-- Start NavBar -->
+    <nav>
+      <div class="Logonetflix">
+        <img src="images/Logonetflix.png" alt="..." />
+      </div>
+      <div class="selectmenu">
+        <i class="fa-solid fa-globe"></i>
+        <select name="" aria-label="Default select example">
+          <option value="ar">العربية</option>
+          <option value="en" selected>English</option>
+        </select>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+    <section>
+      <div class="container">
+        <div class="box">
+          <h1>Sign In</h1>
+          <form>
+            <input type="email" placeholder="Email" id="email" />
+            <p id="erorr-email" class="erorr"></p>
+            <input type="password" placeholder="Password" id="password" />
+            <p id="erorr-password" class="erorr"></p>
+            <input id="submit" class="submit" type="submit" value="Sign Up" />
+          </form>
+          <div class="d-flex help">
+            <div class="d-flex">
+              <input type="checkbox" id="check" />
+              <label for="check"><span>Remamber Me</span></label>
+            </div>
+            <a href="#">Need Help?</a>
+          </div>
+          <div class="facebook">
+            <img src="images/FB-f-Logo__blue_57.png" alt="..." />
+            <span>Login With Facebook</span>
+          </div>
+          <div class="sign-up">
+            <span>New to Netflix?</span>
+            <a href="#">Sign up now</a>
+          </div>
+          <p class="last-p">
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot.<a href="#">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BootStrap JS -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- FontAwesome Icon -->
+    <script
+      src="https://kit.fontawesome.com/17d10e6c40.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JS -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
